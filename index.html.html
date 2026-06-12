@@ -1,0 +1,202 @@
+
+<h2 class="sr-only">Vos 3 principaux axes d'amélioration en tant que formateur voix et prise de parole</h2>
+
+<style>
+  .card {
+    background: var(--color-background-primary);
+    border: 1.5px solid #E8820C;
+    border-radius: var(--border-radius-lg);
+    margin: 0 0 16px 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .card-header {
+    padding: 18px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .num {
+    font-size: 11px;
+    font-weight: 500;
+    color: #E8820C;
+    background: #FEF0E0;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0 0 4px 0;
+  }
+  .card-promise {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .chevron {
+    margin-left: auto;
+    font-size: 16px;
+    color: #E8820C;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .card-body {
+    display: none;
+    padding: 0 20px 18px 62px;
+  }
+  .card-body.open {
+    display: block;
+  }
+  .chevron.open {
+    transform: rotate(180deg);
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: #E8820C;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+  }
+  .body-text {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0 0 14px 0;
+  }
+  .quote-block {
+    background: #FEF0E0;
+    border-left: 3px solid #E8820C;
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    padding: 10px 14px;
+    margin: 0 0 12px 0;
+  }
+  .quote-orig {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+    font-style: italic;
+  }
+  .quote-arrow {
+    font-size: 11px;
+    font-weight: 500;
+    color: #E8820C;
+    margin: 0 0 4px 0;
+  }
+  .quote-new {
+    font-size: 12px;
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    color: #E8820C;
+    background: #FEF0E0;
+    border-radius: var(--border-radius-md);
+    padding: 3px 9px;
+    margin-top: 4px;
+  }
+  .intro {
+    padding: 16px 0 8px 0;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+</style>
+
+<p class="intro">Vos contenus révèlent une expertise rare et une pédagogie généreuse. Voici les 3 leviers qui vous feraient franchir un cap décisif.</p>
+
+<div class="card" onclick="toggle(this, 0)" aria-expanded="false">
+  <div class="card-header">
+    <div class="num">1</div>
+    <div style="flex:1">
+      <p class="card-title">L'ancrage dans le concret vécu</p>
+      <p class="card-promise">Rendre chaque concept immédiatement tangible pour accélérer le transfert en situation réelle.</p>
+    </div>
+    <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+  </div>
+  <div class="card-body" id="body-0">
+    <p class="body-text">Vos modules regorgent de concepts puissants et de références théoriques impeccables. Mais l'apprenant a besoin de voir le concept atterrir dans <em>sa</em> vie professionnelle, pas seulement dans un exemple générique. Chaque notion devrait être suivie d'une micro-situation tirée d'un métier précis.</p>
+    <p class="section-label">Avant</p>
+    <div class="quote-block">
+      <p class="quote-orig">« L'émotion crée la connexion : les gens se souviennent de ce qu'ils ressentent, bien plus que de ce qu'ils entendent. »</p>
+    </div>
+    <p class="section-label">Après — avec ancrage métier</p>
+    <div class="quote-block">
+      <p class="quote-new">« L'émotion crée la connexion. Un commercial qui raconte le problème client qu'il a <em>vécu</em> avant de présenter sa solution sera retenu. Un directeur qui évoque sa propre peur du discours avant d'en annoncer un sera suivi. Lequel ressemble à votre prochain défi ? »</p>
+    </div>
+    <span class="tag">impact immédiat</span>
+  </div>
+</div>
+
+<div class="card" onclick="toggle(this, 1)" aria-expanded="false">
+  <div class="card-header">
+    <div class="num">2</div>
+    <div style="flex:1">
+      <p class="card-title">La synthèse intermédiaire</p>
+      <p class="card-promise">Aider l'apprenant à mémoriser et relier les idées entre elles au fil du cours, sans attendre la conclusion.</p>
+    </div>
+    <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+  </div>
+  <div class="card-body" id="body-1">
+    <p class="body-text">Vos modules sont denses et intellectuellement stimulants — parfois trop pour une seule session. Les apprenants traversent de nombreux concepts sans repère sur ce qui est central et ce qui est illustratif. Un "point de bilan" régulier après chaque grande idée stabilise la mémorisation.</p>
+    <p class="section-label">Ce que vous faites</p>
+    <div class="quote-block">
+      <p class="quote-orig">Vous enchaînez : voix → posture → regard → gestes → silence → modulation… chaque point développé avec finesse, mais sans pause reconstructive.</p>
+    </div>
+    <p class="section-label">Ce qui manque</p>
+    <div class="quote-block">
+      <p class="quote-new">Après chaque bloc : <br>« Retenez une chose : votre voix et votre posture doivent dire la même chose. Si l'une contredit l'autre, c'est votre corps qu'on croit. Vous avez 30 secondes — notez le moment de votre prochain discours où ce désalignement risque le plus d'apparaître. »</p>
+    </div>
+    <span class="tag">rétention +</span>
+  </div>
+</div>
+
+<div class="card" onclick="toggle(this, 2)" aria-expanded="false">
+  <div class="card-header">
+    <div class="num">3</div>
+    <div style="flex:1">
+      <p class="card-title">La dose de vulnérabilité pédagogique</p>
+      <p class="card-promise">Créer une intimité formatrice qui lève les dernières résistances et donne à l'apprenant la permission de se tromper.</p>
+    </div>
+    <i class="ti ti-chevron-down chevron" aria-hidden="true"></i>
+  </div>
+  <div class="card-body" id="body-2">
+    <p class="body-text">Vos contenus affichent une maîtrise totale — Cicéron, Quintilien, Stanislavski, Campbell, Mehrabian : c'est impressionnant, mais potentiellement intimidant. Glisser un moment de doute ou d'échec personnel dans chaque module transforme le formateur en modèle humain, pas seulement en expert.</p>
+    <p class="section-label">Ce que vous écrivez</p>
+    <div class="quote-block">
+      <p class="quote-orig">« Notre voix est complexe au sens où elle est façonnée par un nombre incalculable de facteurs évolutifs. »</p>
+    </div>
+    <p class="section-label">Ce qui ouvrirait davantage</p>
+    <div class="quote-block">
+      <p class="quote-new">« Il m'a fallu des années pour accepter d'écouter ma propre voix en enregistrement. La première fois, j'ai failli tout arrêter. C'est ce moment précis que je veux vous aider à traverser. »</p>
+    </div>
+    <span class="tag">le plus transformateur</span>
+  </div>
+</div>
+
+<script>
+  function toggle(card, idx) {
+    const body = document.getElementById('body-' + idx);
+    const chevron = card.querySelector('.chevron');
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    chevron.classList.toggle('open', !isOpen);
+    card.setAttribute('aria-expanded', String(!isOpen));
+  }
+</script>
